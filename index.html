@@ -28,16 +28,17 @@ If you want to contact me
 then you can ping me in my discord server 
 the link -
 
-<div><a href="https://discord.gg/txWPp3UQ9x" target="_main">
-    <button>Discord</button></a></div>
+<a href="https://discord.gg/txWPp3UQ9x" target="_main">
+    <button>Discord</button></a>
+
 
 Click on the "Discord" button to get redirected in my discord server 
 
 If i didn't reply then ig i'll be busy
 but dont worry i'll try to reply back as soon as possible :) 
 
-In my discord server (JustTrynaCode's Server) you can send your work and errors about 
-the coding stuff, and can even send your pics about errors and work!
+In my discord server (JustTrynaCode's Server) you can send your work and errors about the coding stuff, and can even send your 
+pics about errors and work!
 
 Ping me in discord if you have any doubts ;)
 
@@ -47,42 +48,28 @@ Cya!!!
             </p>
         </main>
     </div>
+    
 
-</body>
-<style>
-    body {
-      padding: 25px;
-      background-color: white;
-      color: black;
-      font-size: 25px;
-    }
-    .dark-mode {
-      background-color: black;
-      color: white;
-    }
-    .light-mode {
-      background-color: white;
-      color: black;
-    }
-  </style>
-</head>
-<body>
-    <h3 id="DarkModetext">Dark Mode is OFF</h3>
-    <button onclick="darkMode()">Darkmode</button>
-    <button onclick="lightMode()">LightMode</button>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.3.4/lib/darkmode-js.min.js"></script>
     <script>
-      function darkMode() {
-        var element = document.body;
-        var content = document.getElementById("DarkModetext");
-        element.className = "dark-mode";
-        content.innerText = "Dark Mode is ON";
-      }
-      function lightMode() {
-        var element = document.body;
-        var content = document.getElementById("DarkModetext");
-        element.className = "light-mode";
-        content.innerText = "Dark Mode is OFF";
-      }
+    
+      var options = {
+      bottom: '64px', // default: '32px'
+      right: 'unset', // default: '32px'
+      left: '32px', // default: 'unset'
+      time: '0.5s', // default: '0.3s'
+      mixColor: '#fff', // default: '#fff'
+      backgroundColor: '#fff',  // default: '#fff'
+      buttonColorDark: '#100f2c',  // default: '#100f2c'
+      buttonColorLight: '#fff', // default: '#fff'
+      saveInCookies: false, // default: true,
+      label: '🌓' // default: ''
+    }
+    
+    const darkmode = new Darkmode(options);
+    darkmode.showWidget();
+    
     </script>
-  </body>
+    
+</body>
 </html>
